@@ -3,7 +3,7 @@
 <ul>
 	<li><code>&lt;col&gt;</code> denotes the column number <code>c</code> of the cell. It is represented by <strong>alphabetical letters</strong>.
 
-	<ul>
+<ul>
 		<li>For example, the <code>1<sup>st</sup></code> column is denoted by <code>'A'</code>, the <code>2<sup>nd</sup></code> by <code>'B'</code>, the <code>3<sup>rd</sup></code> by <code>'C'</code>, and so on.</li>
 	</ul>
 	</li>
