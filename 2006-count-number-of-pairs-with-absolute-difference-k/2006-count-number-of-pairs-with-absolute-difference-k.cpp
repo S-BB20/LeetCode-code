@@ -1,11 +1,19 @@
 class Solution {
 public:
     int countKDifference(vector<int>& nums, int k) {
-        int ans = 0;
+        int ans = 0, max = 0;
+        map<int, int> m;
         for(int i = 0; i < nums.size(); i++)
-            for(int j = i; j < nums.size(); j++)
-                if(nums[i] - nums[j] == k || nums[j] - nums[i] == k)
-                    ans += 1;
+        {
+            if(max < nums[i])
+                max = nums[i];
+            m[nums[i]] += 1;
+        }
+        for(int i = 0; i < max; i++)
+            if(m[i] != 0 && m[i + k] != 0)
+            {
+                ans =  ans + m[i + k] * m[i];
+            }
         return ans;
     }
 };
